@@ -6,6 +6,25 @@ public class Main {
 
     public static void main(String[] args) {
         add(31.5, 78.2);
+
+        Store store = new Store();
+        store.setItem(30);
+        // Evitar estas conversiones
+        Integer item = (Integer) store.getItem();
+        System.out.println("El valor del item es " + item);
+
+        Store store1 = new Store();
+        store1.setItem(30.4);
+        Double item2 = (Double) store1.getItem();
+        System.out.println("El valor del item es " + item2);
+
+        // Generamos un error, pasando un dato Float y convirtiendolo en Double:
+        Store store2 = new Store();
+        store1.setItem(30.4f);
+        Double item3 = (Double) store1.getItem();
+        System.out.println("El valor del item es " + item3);
+
+
     }
 
     // sobrecarga de metodos para la misma funcionalidad
