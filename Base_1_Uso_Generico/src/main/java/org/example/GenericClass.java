@@ -16,5 +16,11 @@ public class GenericClass {
         return item;
     }
 
+    public <T> void printGenericArray(T[] array){
+        for(T element: array){
+            System.out.println(element);
+        }
+    }
+
 }
 

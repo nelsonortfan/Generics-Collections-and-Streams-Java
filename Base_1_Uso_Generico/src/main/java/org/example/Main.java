@@ -39,6 +39,13 @@ public class Main {
         genericClass.returnGeneric("Lucas");
         System.out.println();
         genericClass.returnGeneric(25.9);
+        System.out.println();
+        // usando arrays genericos
+        String [] arrayCadenas = {"Ana", "Pedro", "Lucas", "Joahna"};
+        genericClass.printGenericArray(arrayCadenas);
+        System.out.println();
+        Integer [] listaNumeros = {12,78,63,49};
+        genericClass.printGenericArray(listaNumeros);
 
     }
 }
