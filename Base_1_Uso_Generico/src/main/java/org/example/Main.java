@@ -15,5 +15,11 @@ public class Main {
         int item2 = numero.getItem();
         System.out.println("El item obtenido es " + item2);
 
+        // probando multiples genericos
+        MyHashTable <String, Integer> myHashTable = new MyHashTable<>("Id",12345);
+        System.out.println();
+        System.out.println("El valor String del objeto creado es:");
+        System.out.println(myHashTable);
+
     }
 }
