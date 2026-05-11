@@ -45,7 +45,6 @@ public class TestBounded {
         String letra = "c";
         System.out.println("El valor de count con string es: ");
         System.out.println(NumberUtils.countGreaterItems(letras, letra));
-
     }
 
 }
